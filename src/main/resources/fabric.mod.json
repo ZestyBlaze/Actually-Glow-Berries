@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "glow",
+  "version": "${version}",
+
+  "name": "Actually Glow Berries",
+  "description": "Makes Glow Berries actually make the player glow when eaten!",
+  "authors": [
+    "ZestyBlaze"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/actually-glow-berries",
+    "sources": "https://github.com/ZestyBlaze/Actually-Glow-Berries",
+    "issues": "https://github.com/ZestyBlaze/Actually-Glow-Berries/issues"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zestyblaze.glow.GlowBerries"
+    ]
+  },
+  "mixins": [
+    "glow.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.zestyblaze.glow.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "GlowingBerriesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
