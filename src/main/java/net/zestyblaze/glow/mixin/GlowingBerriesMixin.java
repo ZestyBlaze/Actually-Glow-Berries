@@ -18,7 +18,6 @@ public class GlowingBerriesMixin {
     @Inject(method = "finishUsing", at = @At("HEAD"), cancellable = true)
     private void glowBerryGlowEffect(ItemStack stack, World world, LivingEntity user, CallbackInfoReturnable<ItemStack> cir) {
         if(!world.isClient) {
-            GlowBerries.LOGGER.info("Test");
             if (stack.getItem() == Items.GLOW_BERRIES) {
                 user.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 100, 0, true, false));
             }
